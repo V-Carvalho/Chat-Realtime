@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat-Realtime</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="side-container"></div>
+
+    <div class="conversations-list">
+      <div class="search-messages"> 
+        <input type="text" class="input-search" placeholder="Pesquisar:"> 
+      </div>
+
+      <div class="unread-messages">
+        <h2 class="title-message">Não Lidas</h2>
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+      </div>
+
+      <div class="all-messages">
+        <h2 class="title-message">Todas as mensagens</h2>
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-messages">
+      <div class="header-chat">
+        <div class="message">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar-header">
+          <span class="name">Mark Zuckerberg</span>
+        </div>
+      </div>
+      <div class="body-chat">
+        <div class="body-list-side-left">
+          <ul id="list-message-side-left">
+          </ul>
+        </div>
+        <div class="body-list-side-right">
+          <ul id="list-message-side-right">
+          </ul>
+        </div>                
+      </div>
+      <div class="footer-chat">
+        <input type="text" class="input-send-message" id="input-send-message" placeholder="Mensagem:">
+        <button class="button-send-message" type="submit" onclick="sendMessage(document.getElementById('input-send-message').value)">Enviar</button>
+      </div>
+    </div>
+
+    <div class="side-container"></div>
+  </main>  
+  <script src="js/script.js"></script>
+</body>
+</html>
